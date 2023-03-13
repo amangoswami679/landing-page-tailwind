@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./dist/output.css">
+  <script src="./scripts.js" defer></script>
+  <title>Landing Page - TCSS</title>
+</head>
+<body>
+  <!--fixed, responsive navbar-->
+  <nav class="fixed w-full top-0 flex flex-wrap items-center justify-between bg-slate-800 p-3 md:text-lg lg:px-[50px]">
+    <div><img src="./images/logo_witcher.svg" alt="The Witcher Logo"></div>
+    <img src="./images/menu.svg" id="menu-button" class="h-6 w-6 cursor-pointer md:hidden block">
+    <div class="hidden w-full md:flex md:items-center md:w-auto md:justify-between" id="menu-items">
+      <ul class="text-slate-300 md:flex md:gap-4">
+        <li class="cursor-pointer py-2 block hover:text-purple-400 border-b-slate-300 border-b-2 md:hover:text-purple-400 md:border-b-0">Home</li>
+        <li class="cursor-pointer py-2 block hover:text-purple-400 border-b-slate-300 border-b-2 md:hover:text-purple-400 md:border-b-0">About</li>
+        <li class="cursor-pointer py-2 block hover:text-purple-400 border-b-slate-300 border-b-2 md:hover:text-purple-400 md:border-b-0 md:mr-4">Contact Us</li>
+      </ul>
+    </div>  
+  </nav>
+  <main class="mt-[74px] h-[calc(100vh-122px)] w-full p-3 md:max-lg:px-[50px] flex flex-wrap items-center justify-between bg-slate-900 md:text-lg lg:max-xl:px-[75px] lg:px-[150px]">
+    <div>
+      <p class="text-white text-3xl md:w-[450px] 2xl:text-6xl 2xl:w-[720px] 2xl:mb-10 2xl:leading-[4.5rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione?</p>
+      <p class="text-slate-300 md:w-[400px] 2xl:text-2xl 2xl:w-[700px] 2xl:leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quaerat blanditiis ratione consequatur soluta nobis nihil eligendi! Sit?</p>
+    </div>
+    <div class="mx-auto my-auto md:mx-0 md:my-0">
+      <img src="https://picsum.photos/id/43/200/200" class="1440:max-2xl:w-[400px] 1440:max-2xl:h-[300px] 2xl:w-[640px] 2xl:h-[500px] lg:w-[350px] lg:h-[200px]" alt="" srcset="">
+    </div>
+  </main>
+  <footer class="fixed w-full bottom-0 flex items-center justify-center bg-slate-800 p-3 text-slate-300 md:text-lg">Random Landing Page</footer>
+</body>
+</html>
